@@ -16,6 +16,7 @@ chrome.commands.onCommand.addListener((command, tab) => {
             break;
     }
 
+    //Executed on current tab
     chrome.scripting.executeScript({
         target: {tabId: tab.id},
         files: ['content-script.js']
