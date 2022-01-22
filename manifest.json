@@ -1,0 +1,30 @@
+{
+    "name": "ctrlQ",
+    "description": "Hotkeys for quick searches on the web",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting"
+    ],
+    "commands": {
+        "google": {
+            "suggested_key": {
+                "default": "Alt+Shift+Q",
+                "mac": "Alt+Shift+Q"
+            },
+        "description": "Make a google search of highlighted text"
+        },
+        "wikipedia": {
+            "suggested_key": {
+                "default": "Alt+Shift+W",
+                "mac": "Alt+Shift+W"
+            },
+        "description": "Make a wikipedia search of highlighted text"
+        }
+    }
+}
