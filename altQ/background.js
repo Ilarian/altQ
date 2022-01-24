@@ -7,6 +7,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 
 chrome.commands.onCommand.addListener((command, tab) => {
+    if(!command || !tab) return;
     switch(command) {
         case "google":
             URL = "https://google.com/search?q="
