@@ -6,11 +6,11 @@ Chrome extension for hotkey searches on google and wikipedia because 2 clicks is
 
 ## How to install
 
-1. clone the repo to your desired destination
-2. open chrome
-3. navigate to chrome extensions (type chrome://extensions in adressbar or from top right menu "More tools" -> "Extensions")
-4. top right, enable developer mode
-5. Click load unpacked and select the altQ folder
+1. Clone the repo (or click the green "Code" button and download zip, then unpack it) to your desired destination
+2. Open chrome
+3. Navigate to chrome extensions (type chrome://extensions in adressbar or from top right menu "More tools" -> "Extensions")
+4. Top right, enable developer mode
+5. Click load unpacked and select the altQ folder with the manifest.json file.
 6. Query hotkeys should work now on any website (They don't work in the extensions tab).
 
 Incase the hotkeys don't work, check the extensions tab and from top left menu select keyboard shortcuts.\
