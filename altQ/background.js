@@ -1,7 +1,7 @@
 let URL;
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if(!message.msg) return;
+    if(!message.msg || !URL) return;
     selection = message.msg;
     createQueryTab(URL+selection)
 })
@@ -25,7 +25,6 @@ chrome.commands.onCommand.addListener((command, tab) => {
 });
 
 function createQueryTab(url){
-    if(!url) return
 
     const props = {
         active: true,
